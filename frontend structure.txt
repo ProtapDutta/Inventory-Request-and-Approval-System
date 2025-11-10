@@ -1,0 +1,21 @@
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js          # Navigation panel
+│   │   ├── LoginForm.js       # Reusable login
+│   │   ├── RequestForm.js     # Create request form
+│   │   ├── RequestTable.js    # Display requests
+│   │   └── EmployeeForm.js    # Create employee form
+│   ├── pages/
+│   │   ├── EmployeeDashboard.js
+│   │   └── AdminDashboard.js
+│   ├── services/
+│   │   └── api.js             # Axios API calls
+│   ├── context/
+│   │   └── AuthContext.js     # Global auth state
+│   ├── App.js
+│   └── index.js
+└── package.json
+
+
+

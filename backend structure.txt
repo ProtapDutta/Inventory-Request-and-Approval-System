@@ -1,0 +1,20 @@
+backend/
+├── config/
+│   └── db.js              # MongoDB connection
+├── models/
+│   ├── User.js            # Employee & Admin model
+│   └── Request.js         # Item request model
+├── middleware/
+│   ├── auth.js            # JWT verification
+│   └── role.js            # Role-based access control
+├── routes/
+│   ├── authRoutes.js      # Login routes
+│   ├── employeeRoutes.js  # Employee operations
+│   └── adminRoutes.js     # Admin operations
+├── controllers/
+│   ├── authController.js
+│   ├── employeeController.js
+│   └── adminController.js
+├── .env                   # Environment variables
+├── server.js              # Main entry point
+└── package.json
