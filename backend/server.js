@@ -2,19 +2,19 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
-
 const authRoutes = require('./routes/authRoutes');
 const employeeRoutes = require('./routes/employeeRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 
-// Initialize Express
 const app = express();
-
-// Connect to Database
 connectDB();
 
-// Middleware
-const allowedOrigins = [process.env.FRONTEND_URL, 'http://localhost:5173'];
+// CORS Configuration - Allow Your Vercel Frontend
+const allowedOrigins = [
+  'https://inventory-system-rust-alpha.vercel.app',
+  'http://localhost:5173', // for local development
+  'http://localhost:3000'
+];
 
 app.use(cors({
   origin: allowedOrigins,
@@ -42,5 +42,5 @@ app.use((err, req, res, next) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
