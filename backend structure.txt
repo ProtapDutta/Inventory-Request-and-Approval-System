@@ -1,20 +1,26 @@
 backend/
 ├── config/
-│   └── db.js              # MongoDB connection
+│   └── db.js                  # MongoDB connection
 ├── models/
-│   ├── User.js            # Employee & Admin model
-│   └── Request.js         # Item request model
-├── middleware/
-│   ├── auth.js            # JWT verification
-│   └── role.js            # Role-based access control
+│   ├── User.js                # User (admin/employee)
+│   └── Request.js             # Item request
 ├── routes/
-│   ├── authRoutes.js      # Login routes
-│   ├── employeeRoutes.js  # Employee operations
-│   └── adminRoutes.js     # Admin operations
+│   ├── authRoutes.js          # Login/register
+│   ├── employeeRoutes.js      # Employee actions
+│   └── adminRoutes.js         # Admin actions
 ├── controllers/
 │   ├── authController.js
 │   ├── employeeController.js
 │   └── adminController.js
-├── .env                   # Environment variables
-├── server.js              # Main entry point
-└── package.json
+├── middleware/
+│   ├── auth.js                # JWT verification
+│   └── role.js                # RBAC
+├── scripts/
+│   └── seedAdmin.js           # Seed admin user
+├── .env                       # Env vars (DB, secrets, etc)
+├── .gitignore
+├── server.js                  # Express app entry
+├── vercel.json                # Vercel serverless config
+├── package.json
+└── package-lock.json
+
