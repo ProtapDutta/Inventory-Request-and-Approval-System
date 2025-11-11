@@ -1,11 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-<<<<<<< HEAD
-  baseURL: process.env.VITE_API_URL || 'https://inventory-backend-alpha.vercel.app/api'
-=======
-   baseURL: 'https://inventory-backend-alpha.vercel.app/'
->>>>>>> c948baad5d64d2d14b417f5a7b2713f9aba9b4b4
+  baseURL: 'https://inventory-backend-alpha.vercel.app/api'
 });
 
 // Add token to every request automatically
