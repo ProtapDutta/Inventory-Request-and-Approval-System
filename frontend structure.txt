@@ -1,21 +1,34 @@
 frontend/
+├── public/
+│   └── vite.svg               # Asset (optional)
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.js          # Navigation panel
-│   │   ├── LoginForm.js       # Reusable login
-│   │   ├── RequestForm.js     # Create request form
-│   │   ├── RequestTable.js    # Display requests
-│   │   └── EmployeeForm.js    # Create employee form
+│   │   ├── LoginForm.jsx
+│   │   ├── CreateEmployeeForm.jsx
+│   │   ├── CreateRequestForm.jsx
+│   │   ├── RequestTable.jsx
+│   │   ├── EmployeesList.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── ApprovalModal.jsx
+│   │   ├── NavPanel.jsx
+│   │   └── SuccessNotification.jsx
 │   ├── pages/
-│   │   ├── EmployeeDashboard.js
-│   │   └── AdminDashboard.js
+│   │   ├── AdminDashboard.jsx
+│   │   └── EmployeeDashboard.jsx
 │   ├── services/
-│   │   └── api.js             # Axios API calls
+│   │   └── api.js             # API config/calls
 │   ├── context/
-│   │   └── AuthContext.js     # Global auth state
-│   ├── App.js
-│   └── index.js
-└── package.json
+│   │   └── AuthContext.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .env.production            # Vercel API URL setting
+├── .gitignore
+├── vite.config.js
+├── package.json
+├── package-lock.json
+└── index.html
+
 
 
 
