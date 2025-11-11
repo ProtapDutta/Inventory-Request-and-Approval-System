@@ -129,7 +129,7 @@ const LoginForm = ({ setCurrentPage }) => {
           <div className="alert alert-info" role="alert">
             <h6 className="fw-bold mb-2">📋 Demo Credentials:</h6>
             <small className="d-block mb-1">
-              <strong>Admin:</strong> admin@email.com / admin123
+              <strong>Admin:</strong> admin@gmail.com / admin123
             </small>
             <small className="d-block">
               <strong>Employee:</strong> pro@gmail.com / pro123
